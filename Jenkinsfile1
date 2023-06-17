@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/shinwuu/learn_with_shin.git']])
+            }
+        }
+        stage('Build') {
+            steps {
+                git branch: 'main', url: 'https://github.com/shinwuu/learn_with_shin.git'
+                sh 'python3 math_operators.py'
+            }
+        }
+        stage('Unit_Test') {
+            steps {
+                sh 'python3 -m venv env'
+                sh 'pip install pytest'
+                sh 'python3 -m pytest'
+            }
+        }
+    }
+}
