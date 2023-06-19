@@ -2,5 +2,5 @@ projectKey=cicd_python
 serverUrl=http://192.168.230.131:9000
 serverVersion=10.0.0.68432
 dashboardUrl=http://192.168.230.131:9000/dashboard?id=cicd_python
-ceTaskId=AYjQOg6-cZr2oIjiY12x
-ceTaskUrl=http://192.168.230.131:9000/api/ce/task?id=AYjQOg6-cZr2oIjiY12x
+ceTaskId=AYjRjcvqZOTuvxS2Txt3
+ceTaskUrl=http://192.168.230.131:9000/api/ce/task?id=AYjRjcvqZOTuvxS2Txt3
